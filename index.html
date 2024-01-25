@@ -1,0 +1,49 @@
+<html >
+<head>
+    <title>Application form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+   
+</head>
+<body>
+
+    <form id="myForm" onsubmit="validate(); return false;">
+        <h1>APPLICATION FORM</h1>
+        <label for="firstName"><b>First Name:</b></label>
+        <input type="text" id="firstName" name="firstName">
+        <div class="error-message" id="firstNameError"></div>
+
+        <label for="lastName"><b>Last Name:</b></label>
+        <input type="text" id="lastName" name="lastName">
+        <div class="error-message" id="lastNameError"></div>
+
+        <label for="address"><b>Address:</b></label>
+        <input type="text" id="address" name="address">
+        <div class="error-message" id="addressError"></div>
+
+        <label for="course"><b>Course:</b>></label>
+        <input type="text" id="course" name="course">
+        <div class="error-message" id="courseError"></div>
+
+        <label for="gender"><b>Gender:</b></label>
+        <select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <div class="error-message" id="genderError"></div>
+
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email">
+        <div class="error-message" id="emailError"></div>
+
+        <label for="phoneNumber"><b>Phone Number:</b></label>
+        <input type="tel" id="phoneNumber" name="phoneNumber">
+        <div class="error-message" id="phoneNumberError"></div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
